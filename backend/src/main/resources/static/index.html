@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Match</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="js/app.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">CM</div>
+      <div>
+        <h1>Course Match</h1>
+        <p>Σύγκριση μαθημάτων βάσει περιγραφής & learning outcomes</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="card">
+      <h3>📘 Επίλεξε έτοιμο μάθημα</h3>
+      <select id="standardSelect">
+        <option value="">— Χειροκίνητη εισαγωγή —</option>
+      </select>
+    </section>
+
+    <!-- ================= GRID ================= -->
+    <section class="grid">
+
+      <!-- ===== COURSE A ===== -->
+      <article class="card">
+        <h3>Μάθημα A – Περιγραφή</h3>
+        <textarea
+          id="descA"
+          placeholder="Περιγραφή μαθήματος A..."
+        ></textarea>
+
+        <h3>Μάθημα A – Learning Outcomes</h3>
+        <textarea
+          id="outcomesA"
+          placeholder="Μετά την ολοκλήρωση του μαθήματος ο φοιτητής θα μπορεί να..."
+        ></textarea>
+
+        <div class="meta">
+          <span id="countA">0</span> χαρακτήρες
+        </div>
+      </article>
+
+      <!-- ===== COURSE B ===== -->
+      <article class="card">
+        <h3>Μάθημα B – Περιγραφή</h3>
+        <textarea
+          id="descB"
+          placeholder="Περιγραφή μαθήματος B..."
+        ></textarea>
+
+        <h3>Μάθημα B – Learning Outcomes</h3>
+        <textarea
+          id="outcomesB"
+          placeholder="Μετά την ολοκλήρωση του μαθήματος ο φοιτητής θα μπορεί να..."
+        ></textarea>
+
+        <div class="meta">
+          <span id="countB">0</span> χαρακτήρες
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ================= ACTIONS ================= -->
+    <section class="actions">
+      <button id="btnCompare" class="btn">🔍 Σύγκριση</button>
+      <button id="btnClear" class="btn secondary">✖ Καθαρισμός</button>
+    </section>
+
+    <!-- ================= RESULT ================= -->
+    <section id="result" class="result hidden">
+      <div class="resultTop">
+        <h3 id="resultTitle">Similarity</h3>
+        <span id="badge" class="badge">—</span>
+      </div>
+
+      <div class="bar">
+        <div id="barFill" class="barFill" style="width: 0%"></div>
+      </div>
+
+      <div class="resultBottom">
+        <div class="big" id="percent">0.00%</div>
+        <div class="desc" id="interpretation">
+          Δώσε δύο περιγραφές και learning outcomes και πάτα «Σύγκριση».
+        </div>
+      </div>
+    </section>
+    
+    <section id="missingSection" class="result hidden">
+        <h3>❌ Τι λείπει από το Μάθημα Β</h3>
+        <div id="missingTopics" class="missingBox"></div>
+    </section>
+
+    <!-- ================= TIPS ================= -->
+    <section class="tips">
+      <details>
+        <summary>💡 Tips για καλύτερο αποτέλεσμα</summary>
+        <ul>
+          <li>Χρησιμοποίησε τα “Contents / Learning Outcomes” του syllabus.</li>
+          <li>Αφαίρεσε “assessment methods” αν δεν σχετίζονται με ύλη.</li>
+          <li>Κράτησε λέξεις-κλειδιά & θεματικές ενότητες.</li>
+        </ul>
+      </details>
+    </section>
+
+  </main>
+</body>
+</html>

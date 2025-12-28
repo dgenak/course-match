@@ -1,0 +1,5 @@
+backend/target/
+nlp-service/.venv/
+nlp-service/__pycache__/
+.vscode/
+.idea/

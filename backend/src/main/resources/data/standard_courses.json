@@ -1,0 +1,10 @@
+{
+  "courses": [
+    {
+      "id": "ba_pt",
+      "title": "Business Analytics & Personalization Technologies",
+      "description": "The vast amount of available data produced by the interaction of users of online (and offline services) with systems and applications provides unprecedented opportunities to analyze, understand and predict human behaviour to deliver advanced and personalized services. Recently, the domain of Behavioral Analytics emerged as a response to the above need focusing on the exploitation of big data being produced mainly by the interactive online behaviour of users with fundamental goal to support users in the process of finding relevant and interesting information and at the same time to provide businesses the means to understand the needs of the customers predicting their future behaviour.",
+      "learning_outcomes": "Understand human behavior modeling\nUnderstand data analysis algorithms\nUnderstand personalization applications in the business environment\nDevelop skills for using data analysis tools"
+    }
+  ]
+}
